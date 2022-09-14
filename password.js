@@ -24,6 +24,11 @@ function loginWindow(player) {
         var cd = mc.newCustomForm();
         cd.setTitle("注册窗口");
         cd.addInput("输入密码", "输入密码注册");
+        cd.addLabel("text1");
+        cd.addLabel("text2");
+        cd.addLabel("text3");
+   //If you need to display more copies, just add
+        cd.addLabel("text4");
         player.sendForm(cd, function(player, data) {
             var record = json.get(player.name);
             if (data == null && data == undefined) {
@@ -43,6 +48,11 @@ function loginWindow(player) {
         var cd2 = mc.newCustomForm()
         cd2.setTitle("登录窗口")
         cd2.addInput("登录密码", "输入密码登录进入")
+        cd.addLabel("text1");
+        cd.addLabel("text2");
+        cd.addLabel("text3");
+   //If you need to display more copies, just add
+        cd.addLabel("text4");
         player.sendForm(cd2, function(player, data) {
             if (data == null) {
                 return loginWindow(player);
