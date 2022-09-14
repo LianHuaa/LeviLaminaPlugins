@@ -34,7 +34,7 @@ function loginWindow(player) {
                 record["密码"] = data[0];
                 json.set(player.name, record);
             }
-            if(json.get(player.name)["密码"] != null){
+            if (json.get(player.name)["密码"] != null) {
                 loginWindow(player);
             }
         }
@@ -46,12 +46,14 @@ function loginWindow(player) {
         player.sendForm(cd2, function(player, data) {
             if (data == null) {
                 return loginWindow(player);
-            } else if (data[0] == "" ){
-                    return loginWindow(player);
-                } else if (data[0] == json.get(player.name)["密码"]) {
-                    player.sendToast("提示", "加入游戏")
-                }
+            } else if (data[0] == "") {
+                return loginWindow(player);
+            } else if (data[0] != json.get(player.name)["密码"]) {
+                return loginWindow(player);
+            } else if (data[0] == json.get(player.name)["密码"]) {
+                player.sendToast("提示", "加入游戏");
             }
-        )
         }
+        )
     }
+}
