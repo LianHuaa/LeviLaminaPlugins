@@ -40,7 +40,7 @@ function loginWindow(player) {
                 json.set(player.name, record);
             }
             if (json.get(player.name)["密码"] != null) {
-                loginWindow(player);
+                return loginWindow(player);
             }
         }
         )
@@ -48,11 +48,11 @@ function loginWindow(player) {
         var cd2 = mc.newCustomForm()
         cd2.setTitle("登录窗口")
         cd2.addInput("登录密码", "输入密码登录进入")
-        cd.addLabel("text1");
-        cd.addLabel("text2");
-        cd.addLabel("text3");
+        cd2.addLabel("text1");
+        cd2.addLabel("text2");
+        cd2.addLabel("text3");
    //If you need to display more copies, just add
-        cd.addLabel("text4");
+        cd2.addLabel("text4");
         player.sendForm(cd2, function(player, data) {
             if (data == null) {
                 return loginWindow(player);
