@@ -31,8 +31,8 @@ function loginWindow(player) {
         cd.addLabel("text4");
         player.sendForm(cd, function(player, data) {
             var record = json.get(player.name);
-            if (data == null && data == undefined) {
-                return loginWindow(player);
+            if (data == null) {
+                player.tell("未注册");
             } else if (data[0] == "") {
                 return loginWindow(player);
             } else {
@@ -55,7 +55,7 @@ function loginWindow(player) {
         cd2.addLabel("text4");
         player.sendForm(cd2, function(player, data) {
             if (data == null) {
-                return loginWindow(player);
+                player.tell("未登录");
             } else if (data[0] == "") {
                 return loginWindow(player);
             } else if (data[0] != json.get(player.name)["密码"]) {
