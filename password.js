@@ -1,7 +1,7 @@
 //注册插件
 ll.registerPlugin("114514登录器", "恶臭的密码登陆", [1, 1, 4]);
 //创建文件夹
-let json = new JsonConfigFile('./plugins/1145141919810/PasswordLogin.js');
+let json = new JsonConfigFile('./plugins/1145141919810/PasswordLogin.json');
 
 //配置文档创建默认信息
 mc.listen("onJoin", function(player) {
