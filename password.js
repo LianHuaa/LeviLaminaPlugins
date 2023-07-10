@@ -1,4 +1,5 @@
 //注册插件
+//本插件似乎有问题懒得改了,这个插件没什么用
 ll.registerPlugin("114514登录器", "恶臭的密码登陆", [1, 1, 4]);
 //创建文件夹
 let json = new JsonConfigFile('./plugins/1145141919810/PasswordLogin.json');
