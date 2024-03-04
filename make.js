@@ -646,3 +646,46 @@ mc.listen("onAte",(pl,it) => {
     }
 });
 }
+//进出服记录
+{
+mc.listen("onConsoleCmd",(cmd)=>{
+    if(cmd == "stop"){
+            let pl = mc.getOnlinePlayers();
+            pl.forEach((arr)=>{arr.kick("服务器已关闭 详情询问管理员");});
+    }
+});
+mc.listen("onJoin",function(pl){
+    let jj = jinfu.get(pl.realName);
+    let ti = system.getTimeStr();
+    let g = peizhi.get("进出服记录");
+    if(g["开关" == "开"]){
+    if(jinfu.get(pl.realName) == null){
+        jinfu.set(pl.realName,{
+            "进服日期":`${ti}`,
+            "近期进服":`${ti}`,
+            "退出时间":"游戏中"
+        }
+        );
+    }else{
+        jinfu.set(pl.realName,{
+            "进服日期":`${jj["进服日期"]}`,
+            "近期进服":`${ti}`,
+            "退出时间":"游戏中"
+        }
+        );
+    }
+    }
+});
+mc.listen("onLeft",function(pl){
+    let jj = jinfu.get(pl.realName);
+    let ti = system.getTimeStr();
+    let g = peizhi.get("进出服记录");
+    if(g["开关" == "开"]){
+    jinfu.set(pl.realName,{
+        "进服日期": `${jj["进服日期"]}`,
+        "近期进服": `${jj["近期进服"]}`,
+        "退出时间": `${ti}`
+    });
+}
+});
+}
