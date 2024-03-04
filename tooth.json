@@ -1,15 +1,14 @@
 {
-    "format_version": 2,
-    "tooth": "github.com/LianHuaa/LeviLaminaPlugins",
-    "version": "0.0.1",
-    "info": {
-        "name": "基础插件",
-        "description": "LeviLamina基础插件",
-        "author": "LianHuaa",
-        "source": "github.com/LianHuaa/LeviLaminaPlugins",
-        "tags": ["lse"]
-    },
-    "files": {
+  "format_version": 2,
+  "tooth": "github.com/LianHuaa/LeviLaminaPlugins",
+  "version": "0.1.1",
+  "info": {
+    "name": "make",
+    "description": "make",
+    "author": "LianHuaa",
+    "tags": ["plugin", "lse", "quickjs", "motd"]
+  },
+  "files": {
     "place": [
       {
         "src": "make.js",
