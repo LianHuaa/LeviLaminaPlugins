@@ -1,0 +1,28 @@
+{
+    "format_version": 2,
+    "tooth": "github.com/LianHuaa/LeviLaminaPlugins",
+    "version": "0.0.1",
+    "info": {
+        "name": "make",
+        "description": "LeviLamina Plugin",
+        "author": "LianHuaa",
+        "source": "github.com/LianHuaa/LeviLaminaPlugins",
+        "tags": [
+            "LeviLamina",
+            "Basic plugins",
+            "make"
+        ]
+    },
+    "asset_url": "https://github.com/LianHuaa/LeviLaminaPlugins/releases/download/0.0.1/make.zip",
+    "dependencies": {
+        "github.com/LiteLDev/LegacyScriptEngine":">=0.3.0"
+    },
+    "files": {
+        "place": [
+            {
+                "src": "make/*",
+                "dest": "plugins/make"
+            }
+        ]
+    }
+}
