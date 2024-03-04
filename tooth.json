@@ -12,13 +12,5 @@
             "Basic plugins",
             "make"
         ]
-    },
-    "files": {
-        "place": [
-            {
-                "src": "make/*",
-                "dest": "plugins/make"
-            }
-        ]
     }
 }
