@@ -6,7 +6,7 @@
     "name": "make",
     "description": "make",
     "author": "LianHuaa",
-    "tags": ["plugin", "lse", "quickjs", "motd"]
+    "tags": []
   },
   "files": {
     "place": [
