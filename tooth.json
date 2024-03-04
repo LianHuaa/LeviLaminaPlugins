@@ -13,10 +13,6 @@
             "make"
         ]
     },
-    "asset_url": "https://github.com/LianHuaa/LeviLaminaPlugins/releases/download/0.0.1/make.zip",
-    "dependencies": {
-        "github.com/LiteLDev/LegacyScriptEngine":">=0.3.0"
-    },
     "files": {
         "place": [
             {
