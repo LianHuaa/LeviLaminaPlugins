@@ -1,2 +1,2 @@
-# LiteLoaderBDS Plugin
+# LeviLamina Plugin
 
