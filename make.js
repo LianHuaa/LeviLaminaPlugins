@@ -53,7 +53,7 @@ peizhi.init('村民保护',{
 peizhi.init('快速回血',{
     "开关":"关"
 });
-peizhi.init("进出服记录"，{
+peizhi.init("进出服记录",{
     "开关":"关"
 });
 
