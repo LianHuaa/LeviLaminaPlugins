@@ -4,11 +4,10 @@
     "version": "0.0.1",
     "info": {
         "name": "基础插件",
-        "description": "LeviLamina Plugin",
+        "description": "LeviLamina基础插件",
         "author": "LianHuaa",
         "source": "github.com/LianHuaa/LeviLaminaPlugins",
-        "tags": [
-        ]
+        "tags": ["lse"]
     },
     "files": {
     "place": [
