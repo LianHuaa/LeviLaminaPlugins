@@ -12,5 +12,17 @@
             "Basic plugins",
             "make"
         ]
-    }
+    },
+    "files": {
+    "place": [
+      {
+        "src": "make.js",
+        "dest": "plugins/make/make.js"
+      },
+      {
+        "src": "manifest.json",
+        "dest": "plugins/make/manifest.json"
+      }
+    ]
+  }
 }
