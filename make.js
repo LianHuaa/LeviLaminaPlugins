@@ -52,11 +52,14 @@ peizhi.init('村民保护',{
 });
 peizhi.init('快速回血',{
     "开关":"关"
+});
+peizhi.init("进出服记录"，{
+    "开关":"关"
 })
 
 {
 //随机传送
-mc.regPlayerCmd("tpr","随机传送",function(pl,args){
+mc。regPlayerCmd("tpr","随机传送",function(pl,args){
     let g = peizhi.get('随机传送');
     if(g["开关"] == "开"){
     let mini = g["传送范围"];
