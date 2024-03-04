@@ -3,7 +3,7 @@
     "tooth": "github.com/LianHuaa/LeviLaminaPlugins",
     "version": "0.0.1",
     "info": {
-        "name": "make",
+        "name": "基础插件",
         "description": "LeviLamina Plugin",
         "author": "LianHuaa",
         "source": "github.com/LianHuaa/LeviLaminaPlugins",
