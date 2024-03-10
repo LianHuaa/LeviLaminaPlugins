@@ -1,6 +1,6 @@
 let peizhi = new JsonConfigFile("./plugins/make/Data/config.json");
 let jsonkill = new JsonConfigFile("./plugins/make/Data/kill.json");
-
+let jinfu = new JsonConfigFile("./plugins/make/Data/jinfu.json");
 peizhi.init('随机传送',{
     "开关":"关",
     "传送范围":2000
