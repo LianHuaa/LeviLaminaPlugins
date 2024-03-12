@@ -278,7 +278,9 @@ function del(pl){
         if(id != null){
             pl.sendModalForm('二次确认',`删除 ${arr[id]} 后\n将会消失很久很久~~~`,'确定','取消',(pl,res)=>{
                 if(res == true){
+		    llist();
                     delete lista[pl.realName][arr[id]];
+		    addlist();
                     pl.tell(`已删除家园 ${arr[id]}`,5);
                     return home(pl);
                 }else {
