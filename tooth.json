@@ -1,7 +1,7 @@
 {
   "format_version": 2,
   "tooth": "github.com/LianHuaa/LeviLaminaPlugins",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "info": {
     "name": "make",
     "description": "make",
